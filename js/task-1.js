@@ -1,3 +1,7 @@
+function slugify(title) {
+  const slug = title.toLowerCase().split(' ');
+  return slug.join('-');
+}
 console.log(slugify('Arrays for beginners')); // "arrays-for-beginners"
 console.log(slugify('English for developer')); // "english-for-developer"
 console.log(slugify('Ten secrets of JavaScript')); // "ten-secrets-of-javascript"
